@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelLite - Discover Amazing Destinations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h3>TravelLite</h3>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#packages" class="nav__link">Packages</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#destinations" class="nav__link">Destinations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <span>&times;</span>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Discover Amazing Destinations</h1>
+                <p class="hero__subtitle">Create unforgettable memories with our expertly crafted travel experiences across incredible India</p>
+                <button class="btn btn--primary hero__cta">Explore Now</button>
+            </div>
+            <div class="hero__search">
+                <form class="search-form" id="search-form">
+                    <div class="search-form__group">
+                        <label for="destination">Destination</label>
+                        <select id="destination" class="form-control">
+                            <option value="">Choose Destination</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="goa">Goa</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="rajasthan">Rajasthan</option>
+                            <option value="himachal">Himachal Pradesh</option>
+                        </select>
+                    </div>
+                    <div class="search-form__group">
+                        <label for="checkin">Check-in Date</label>
+                        <input type="date" id="checkin" class="form-control">
+                    </div>
+                    <div class="search-form__group">
+                        <label for="checkout">Check-out Date</label>
+                        <input type="date" id="checkout" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn--primary search-form__btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Popular Tour Packages</h2>
+                <p class="section__subtitle">Discover our carefully curated travel experiences</p>
+            </div>
+            <div class="packages__grid">
+                <div class="package-card">
+                    <div class="package-card__image">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400&h=250&fit=crop" alt="Golden Triangle Tour">
+                    </div>
+                    <div class="package-card__content">
+                        <h3 class="package-card__title">Golden Triangle Tour</h3>
+                        <p class="package-card__duration">6 Days / 5 Nights</p>
+                        <p class="package-card__description">Explore Delhi, Agra, and Jaipur in this classic India tour</p>
+                        <div class="package-card__footer">
+                            <span class="package-card__price">₹25,000</span>
+                            <button class="btn btn--primary btn--sm">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-card__image">
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&h=250&fit=crop" alt="Kerala Backwaters">
+                    </div>
+                    <div class="package-card__content">
+                        <h3 class="package-card__title">Kerala Backwaters</h3>
+                        <p class="package-card__duration">5 Days / 4 Nights</p>
+                        <p class="package-card__description">Serene houseboat experience in God's Own Country</p>
+                        <div class="package-card__footer">
+                            <span class="package-card__price">₹32,000</span>
+                            <button class="btn btn--primary btn--sm">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-card__image">
+                        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=400&h=250&fit=crop" alt="Rajasthan Heritage">
+                    </div>
+                    <div class="package-card__content">
+                        <h3 class="package-card__title">Rajasthan Heritage</h3>
+                        <p class="package-card__duration">7 Days / 6 Nights</p>
+                        <p class="package-card__description">Royal palaces and desert adventures in Rajasthan</p>
+                        <div class="package-card__footer">
+                            <span class="package-card__price">₹45,000</span>
+                            <button class="btn btn--primary btn--sm">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-card__image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400&h=250&fit=crop" alt="Goa Beach Paradise">
+                    </div>
+                    <div class="package-card__content">
+                        <h3 class="package-card__title">Goa Beach Paradise</h3>
+                        <p class="package-card__duration">4 Days / 3 Nights</p>
+                        <p class="package-card__description">Sun, sand, and surf in India's beach capital</p>
+                        <div class="package-card__footer">
+                            <span class="package-card__price">₹18,000</span>
+                            <button class="btn btn--primary btn--sm">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-card__image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" alt="Himachal Adventure">
+                    </div>
+                    <div class="package-card__content">
+                        <h3 class="package-card__title">Himachal Adventure</h3>
+                        <p class="package-card__duration">6 Days / 5 Nights</p>
+                        <p class="package-card__description">Mountain adventures in the Land of Gods</p>
+                        <div class="package-card__footer">
+                            <span class="package-card__price">₹28,000</span>
+                            <button class="btn btn--primary btn--sm">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-card__image">
+                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=400&h=250&fit=crop" alt="South India Temple Tour">
+                    </div>
+                    <div class="package-card__content">
+                        <h3 class="package-card__title">South India Temple Tour</h3>
+                        <p class="package-card__duration">8 Days / 7 Nights</p>
+                        <p class="package-card__description">Sacred temples and cultural heritage of South India</p>
+                        <div class="package-card__footer">
+                            <span class="package-card__price">₹35,000</span>
+                            <button class="btn btn--primary btn--sm">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Top Destinations</h2>
+                <p class="section__subtitle">Explore the most beautiful places in India</p>
+            </div>
+            <div class="destinations__grid">
+                <div class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=400&h=250&fit=crop" alt="Delhi">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Delhi</h3>
+                        <p class="destination-card__description">India's capital with rich Mughal and British heritage</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=400&h=250&fit=crop" alt="Mumbai">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Mumbai</h3>
+                        <p class="destination-card__description">The city of dreams and Bollywood glamour</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400&h=250&fit=crop" alt="Goa">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Goa</h3>
+                        <p class="destination-card__description">Tropical paradise with pristine beaches</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=400&h=250&fit=crop" alt="Kerala">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Kerala</h3>
+                        <p class="destination-card__description">Backwaters, spices, and natural beauty</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=400&h=250&fit=crop" alt="Rajasthan">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Rajasthan</h3>
+                        <p class="destination-card__description">Royal palaces and desert landscapes</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" alt="Himachal Pradesh">
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Himachal Pradesh</h3>
+                        <p class="destination-card__description">Mountain adventures and hill stations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Our Services</h2>
+                <p class="section__subtitle">Everything you need for the perfect vacation</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">🏨</div>
+                    <h3 class="service-card__title">Hotel Booking</h3>
+                    <p class="service-card__description">Premium hotels and resorts at best prices</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">👨‍🏫</div>
+                    <h3 class="service-card__title">Expert Guides</h3>
+                    <p class="service-card__description">Professional local guides for authentic experiences</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">🚗</div>
+                    <h3 class="service-card__title">Transportation</h3>
+                    <p class="service-card__description">Comfortable and safe travel arrangements</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">✈️</div>
+                    <h3 class="service-card__title">Custom Packages</h3>
+                    <p class="service-card__description">Tailored itineraries for your perfect vacation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">What Our Customers Say</h2>
+                <p class="section__subtitle">Real experiences from our valued travelers</p>
+            </div>
+            <div class="testimonials__grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-card__content">
+                        <div class="testimonial-card__stars">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p class="testimonial-card__review">Amazing experience with TravelLite! The Golden Triangle tour was perfectly organized and our guide was very knowledgeable.</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="Priya Sharma" class="testimonial-card__avatar">
+                            <div>
+                                <h4 class="testimonial-card__name">Priya Sharma</h4>
+                                <p class="testimonial-card__location">Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__content">
+                        <div class="testimonial-card__stars">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p class="testimonial-card__review">Kerala backwater tour exceeded our expectations. The houseboats were comfortable and the scenery was breathtaking.</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Rajesh Kumar" class="testimonial-card__avatar">
+                            <div>
+                                <h4 class="testimonial-card__name">Rajesh Kumar</h4>
+                                <p class="testimonial-card__location">Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__content">
+                        <div class="testimonial-card__stars">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p class="testimonial-card__review">Excellent service and great value for money. The Rajasthan heritage tour was a once-in-a-lifetime experience!</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Anita Patel" class="testimonial-card__avatar">
+                            <div>
+                                <h4 class="testimonial-card__name">Anita Patel</h4>
+                                <p class="testimonial-card__location">Bangalore</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Get In Touch</h2>
+                <p class="section__subtitle">Ready to start your journey? Contact us today!</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__form">
+                    <form id="contact-form" class="form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                            <span class="form-error" id="phone-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <h4>📍 Address</h4>
+                        <p>123 Travel Street<br>Mumbai, Maharashtra 400001<br>India</p>
+                    </div>
+                    <div class="contact__info-item">
+                        <h4>📞 Phone</h4>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div class="contact__info-item">
+                        <h4>✉️ Email</h4>
+                        <p>info@travellite.com</p>
+                    </div>
+                    <div class="contact__map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.0471748781814!2d72.8776559!3d19.0759837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9f0b81f13ad%3A0x3c12f7681185f869!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1633104000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: var(--radius-base);" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__brand">
+                        <h3>TravelLite</h3>
+                        <p>Your gateway to incredible India. Creating unforgettable travel experiences since 2015.</p>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Hotel Booking</a></li>
+                        <li><a href="#">Tour Guides</a></li>
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="#">Custom Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Follow Us</h4>
+                    <div class="footer__social">
+                        <a href="#" target="_blank">📘 Facebook</a>
+                        <a href="#" target="_blank">📷 Instagram</a>
+                        <a href="#" target="_blank">🐦 Twitter</a>
+                        <a href="#" target="_blank">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 TravelLite. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
